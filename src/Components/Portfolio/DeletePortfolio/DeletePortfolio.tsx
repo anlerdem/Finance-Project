@@ -5,12 +5,14 @@ interface Props {
     portfolioValue: string;
 }
 
-const DeletePortfolio = ({onPortfolioDelete, portfolioValue}: Props) => {
+const DeletePortfolio = ({ onPortfolioDelete, portfolioValue }: Props) => {
     return (
         <div>
             <form>
                 <input hidden={true} value={portfolioValue} />
-                <button>x</button>
+                <button className="block w-1/2 mx-auto py-3 text-white duration-200 border-2 rounded-lg bg-red-500 hover:text-red-500 hover:bg-white border-red-500">
+                    X
+                </button>
             </form>
         </div>
     );
