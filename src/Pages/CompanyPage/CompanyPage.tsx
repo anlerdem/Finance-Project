@@ -4,14 +4,14 @@ import { getCompanyProfile } from '../../api';
 import { CompanyProfile } from '../../company';
 import CompanyDashboard from '../../Components/CompanyDashboard/CompanyDashboard';
 import Sidebar from '../../Components/Sidebar/Sidebar';
-import Title from '../../Components/Tile/Tile';
+import Tile from '../../Components/Tile/Tile';
 
-interface Props {}
+interface Props { }
 
 const CompanyPage = (props: Props) => {
-  let {ticker} = useParams();
+  let { ticker } = useParams();
   const [company, setCompany] = useState<CompanyProfile>();
-  
+
   useEffect(() => {
     const getProfileInit = async () => {
       const result = await getCompanyProfile(ticker!);
@@ -23,11 +23,14 @@ const CompanyPage = (props: Props) => {
     <>
       {company ? (
         <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-hidden">
-        <Sidebar />
-        <CompanyDashboard ticker={ticker!}>
-          <Title title="Company Name" subTitle={company.companyName} />
-        </CompanyDashboard>
-      </div>
+          <Sidebar />
+          <CompanyDashboard ticker={ticker!}>
+            <Tile title="Company Name" subTitle={company.companyName} />
+            <Tile title="Price" subTitle={company.price.toString()} />
+            <Tile title="Sector" subTitle={company.sector} />
+            <Tile title="Market Cap" subTitle={company.mktCap.toString()} />
+          </CompanyDashboard>
+        </div>
       ) : (
         <div>Company not found!</div>
       )}
