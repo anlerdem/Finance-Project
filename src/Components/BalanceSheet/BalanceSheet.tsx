@@ -4,7 +4,7 @@ import { useOutletContext } from "react-router-dom";
 import RatioList from "../RatioList/RatioList";
 import { getBalanceSheet } from "../../api";
 import Table from "../Table/Table";
-import Spinner from "../Spinners/Spinners";
+import Spinner from "../Spinners/Spinner";
 
 type Props = {};
 
@@ -36,6 +36,10 @@ const config = [
     {
         label: "Total Debt",
         render: (company: CompanyBalanceSheet) => company.otherCurrentLiabilities,
+    },
+    {
+        label: "Retained Earnings",
+        render: (company: CompanyBalanceSheet) => company.retainedEarnings,
     },
 ];
 

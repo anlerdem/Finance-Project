@@ -3,7 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import Table from "../Table/Table";
 import { CompanyIncomeStatement } from "../../company";
 import { getIncomeStatement } from "../../api";
-import Spinner from "../Spinners/Spinners";
+import Spinner from "../Spinners/Spinner";
 
 type Props = {};
 
@@ -27,6 +27,10 @@ const configs = [
     {
         label: "Gross Profit",
         render: (company: CompanyIncomeStatement) => company.grossProfit,
+    },
+    {
+        label: "Gross Margin Ratio",
+        render: (company: CompanyIncomeStatement) => company.grossProfitRatio,
     },
     {
         label: "Income Before Tax",
