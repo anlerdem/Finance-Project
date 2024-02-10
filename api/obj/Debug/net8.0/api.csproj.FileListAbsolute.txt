@@ -136,3 +136,9 @@ C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\runtimes\win\lib\net6.
 C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ANL\Desktop\Finance-Project\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
